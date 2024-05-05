@@ -37,6 +37,14 @@ public class MainActivity extends Activity{
         back.setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {setContentView(R.layout.main);ini_main();}});
 
         list.setOnClickListener(new View.OnClickListener() {@Override public void onClick(View v) {setContentView(R.layout.show_list);show_list(3);}});
+
+        for (int week=1;week<=6;week++){
+            LinearLayout week_ly = new LinearLayout(getApplicationContext());
+            week_ly.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.MATCH_PARENT, 1.0f));
+            for (int day=1;day<=7;day++){
+                Button day_ly = new Button(getApplicationContext());
+            }
+        }
     }
 
     public void show_list(int category){
